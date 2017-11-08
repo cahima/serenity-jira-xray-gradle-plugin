@@ -27,23 +27,35 @@ dependencies {
   testCompile group: 'org.spockframework', name: 'spock-core', version: spockVersion
 }
 
+task sourceJar(type: Jar) {
+  classifier 'sources'
+  from sourceSets.main.allGroovy
+}
+
+task groovydocJar(type: Jar, dependsOn: groovydoc) {
+  classifier = 'javadoc'
+  from project.docsDir.path + '/groovydoc'
+}
+
 publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
+  publications {
+    mavenJava(MavenPublication) {
+      from components.java
+      artifact sourceJar
+      artifact groovydocJar
     }
+  }
 }
 
 afterReleaseBuild.dependsOn publish
 afterReleaseBuild.dependsOn publishToMavenLocal
 
 jacocoTestReport {
-    reports {
-        xml.enabled false
-        csv.enabled false
-        html.destination file("${buildDir}/jacocoHtml")
-    }
+  reports {
+    xml.enabled false
+    csv.enabled false
+    html.destination file("${buildDir}/jacocoHtml")
+  }
 }
 
 wrapper.gradleVersion = '4.2'
