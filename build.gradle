@@ -23,14 +23,8 @@ apply plugin: 'net.researchgate.release'
 dependencies {
   compile gradleApi()
   compile group: 'io.github.http-builder-ng', name: 'http-builder-ng-core', version: httpBuilderVersion
-  compile group: 'org.codehaus.groovy', name: 'groovy-all', version: groovyVersion
+  compile (group: 'org.codehaus.groovy', name: 'groovy-all', version: groovyVersion) { force = true }
   testCompile group: 'org.spockframework', name: 'spock-core', version: spockVersion
-}
-
-configurations.all {
-  resolutionStrategy {
-    preferProjectModules()
-  }
 }
 
 task sourceJar(type: Jar) {
