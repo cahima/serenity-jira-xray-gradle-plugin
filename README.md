@@ -6,7 +6,7 @@
 `  ...`
 `  dependencies {`
 `    ...`
-`    classpath group: 'com.cahimar.jira', name: 'jira-xray-gradle-plugin', version: '1.0'`
+`    classpath group: 'com.cahimar.jira', name: 'serenity-jira-xray-gradle-plugin', version: '1.0-SNAPSHOT'`
 `  }`
 `}`
 
@@ -26,3 +26,4 @@
 ### NB This will look for Serenity json files in your serenity output directory. Make sure you are outputting json from serenity.
 If you are not then add the following property to serenity.properties:
 output.formats=json, html
+### NB This hasn't been published to maven central yet. If you want to use it you'll have to build it yourself and publish it to your artifactory/nexus/repo of choice.
