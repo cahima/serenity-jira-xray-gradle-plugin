@@ -2,20 +2,41 @@ package com.cahimar.jira
 
 import static groovyx.net.http.HttpBuilder.configure
 
+/**
+ * Implementation of TestRetriever that uses the jira api to retrieve all Test tickets in a project
+ */
 class TestRetrieverImpl implements TestRetriever {
 
-  //this looks like a magic number
-  //but it's the max number of rows jira will typically allow us to retrieve in a single call
+  /**
+   * The maximum number of rows to retrieve in a single jira query.
+   */
   static final MAX_RESULTS = 1000
 
+  /**
+   * A jira username
+   */
   def username
 
+  /**
+   * A jira password
+   */
   def password
 
+  /**
+   * A jira project
+   */
   def project
 
+  /**
+   * A jira url
+   */
   def url
 
+  /**
+   * Retrieve a subset of Test jiras from a potentially large set.
+   * @param startAt the index to start at
+   * @param maxResults the max number of results to return
+   */
   def retrieveJiraTestsByRange(def startAt, def maxResults) {
     def result = configure {
       request.uri = url
@@ -26,6 +47,9 @@ class TestRetrieverImpl implements TestRetriever {
     }.get()
   }
 
+  /**
+   * Retrieve all jira Test ids in the project
+   */
   def retrieveAll() {
     println "Retrieving jira tests for $project"
     def startAt = 0

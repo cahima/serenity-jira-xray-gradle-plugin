@@ -3,6 +3,9 @@ package com.cahimar.jira
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
+/**
+ * Plugin that sends Serenity test results to Jira XRay
+ */
 class SerenityJiraXrayGradlePlugin implements Plugin<Project> {
 
   void apply(Project project) {

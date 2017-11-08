@@ -27,6 +27,12 @@ dependencies {
   testCompile group: 'org.spockframework', name: 'spock-core', version: spockVersion
 }
 
+configurations.all {
+  resolutionStrategy {
+    preferProjectModules()
+  }
+}
+
 task sourceJar(type: Jar) {
   classifier 'sources'
   from sourceSets.main.allGroovy
@@ -58,4 +64,4 @@ jacocoTestReport {
   }
 }
 
-wrapper.gradleVersion = '4.2'
+wrapper.gradleVersion = '4.2.1'

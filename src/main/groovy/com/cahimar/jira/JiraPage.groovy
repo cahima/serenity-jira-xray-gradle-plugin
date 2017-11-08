@@ -1,13 +1,28 @@
 package com.cahimar.jira
 
+/**
+ * Writes out a html page which redirects to the generated Test Execution jira ticket
+ */
 class JiraPage {
 
+  /**
+   * The folder we want to generate our test output into
+   */
   def folder
 
+  /**
+   * The test execution jira id we just generated
+   */
   def jiraId
 
+  /**
+   * The url of your jira instance
+   */
   def url
 
+  /**
+   * Create a folder/jira/jira.html which redirects to your Jira Test Execution ticket
+   */
   def write() {
     def jiraUrl = "$url/browse/$jiraId"
     def folderLinuxStyle = "$folder".replace('\\', '/')
