@@ -1,0 +1,24 @@
+{
+    "info": {
+        "summary": "Automated test execution",
+        "version": "1.0",
+        "project": "TAD"
+    },
+    "tests": [
+        {
+            "testKey": "TAD-5",
+            "start": "2017-11-03T02:14:58+0000",
+            "finish": "2017-11-03T02:15:51+0000",
+            "comment": "Verify the calculator can do basic arithmetic run in chrome",
+            "status": "PASS",
+            "examples": [
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS",
+                "PASS"
+            ]
+        }
+    ]
+}

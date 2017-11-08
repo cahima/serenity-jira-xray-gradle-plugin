@@ -1,0 +1,49 @@
+group 'com.cahimar.jira'
+
+buildscript {
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    dependencies {
+      classpath group: 'net.researchgate', name: 'gradle-release', version: gradleReleaseVersion
+    }
+  }
+}
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+}
+
+apply plugin: 'groovy'
+apply plugin: 'jacoco'
+apply plugin: 'maven-publish'
+apply plugin: 'net.researchgate.release'
+
+dependencies {
+  compile gradleApi()
+  compile group: 'io.github.http-builder-ng', name: 'http-builder-ng-core', version: httpBuilderVersion
+  compile group: 'org.codehaus.groovy', name: 'groovy-all', version: groovyVersion
+  testCompile group: 'org.spockframework', name: 'spock-core', version: spockVersion
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+afterReleaseBuild.dependsOn publish
+afterReleaseBuild.dependsOn publishToMavenLocal
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/jacocoHtml")
+    }
+}
+
+wrapper.gradleVersion = '4.2'

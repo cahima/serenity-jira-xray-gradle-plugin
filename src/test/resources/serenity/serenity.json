@@ -1,0 +1,1101 @@
+{
+  "name": "Verify the calculator can do basic arithmetic",
+  "id": "prove-the-calculator-can-add-and-subtract;verify-the-calculator-can-do-basic-arithmetic",
+  "testSteps": [
+    {
+      "number": 1,
+      "description": "Verify the calculator can do basic arithmetic #1: {Number1\u003d1, Operation\u003d+, Number2\u003d2, Equals\u003d\u003d, Result\u003d3}",
+      "duration": 10420,
+      "startTime": "2017-11-03T13:14:58.605+11:00[Australia/Sydney]",
+      "screenshots": [
+        {
+          "screenshot": "3131f48692ec953529c5f4b80a98aa7108dc465253e332284302673d6d7ff9fc.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 2,
+          "description": "Given I load the calculator",
+          "duration": 5765,
+          "startTime": "2017-11-03T13:14:58.616+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 3,
+              "description": "Load",
+              "duration": 4548,
+              "startTime": "2017-11-03T13:14:59.324+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "description": "When I enter 1, +, 2",
+          "duration": 2347,
+          "startTime": "2017-11-03T13:15:04.382+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "d48d41c43a6b8286abd7338b95ea5a62ef7abb8f2e95cb90a2716e5ebe1b0bc7.png"
+            },
+            {
+              "screenshot": "df3f3d523ab363e7d473e97584dd66d4338ca104dc3bf571ae10917eb238b095.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 5,
+              "description": "Select: 1",
+              "duration": 696,
+              "startTime": "2017-11-03T13:15:04.589+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+                },
+                {
+                  "screenshot": "214cfe4b51bfe4f7fd7341663b4adab2dbead1f76b201cfcbf6fd23d278c6eba.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 6,
+              "description": "Operation: +",
+              "duration": 608,
+              "startTime": "2017-11-03T13:15:05.286+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "214cfe4b51bfe4f7fd7341663b4adab2dbead1f76b201cfcbf6fd23d278c6eba.png"
+                },
+                {
+                  "screenshot": "e839f7add1c20d6e6226630bd9bdaeead0199c62cec2b31b9fee6c756e181f4f.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 7,
+              "description": "Select: 2",
+              "duration": 613,
+              "startTime": "2017-11-03T13:15:05.895+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "e839f7add1c20d6e6226630bd9bdaeead0199c62cec2b31b9fee6c756e181f4f.png"
+                },
+                {
+                  "screenshot": "df3f3d523ab363e7d473e97584dd66d4338ca104dc3bf571ae10917eb238b095.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "description": "Then the answer is 3",
+          "duration": 2133,
+          "startTime": "2017-11-03T13:15:06.730+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "df3f3d523ab363e7d473e97584dd66d4338ca104dc3bf571ae10917eb238b095.png"
+            },
+            {
+              "screenshot": "3131f48692ec953529c5f4b80a98aa7108dc465253e332284302673d6d7ff9fc.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 9,
+              "description": "Calculate",
+              "duration": 1285,
+              "startTime": "2017-11-03T13:15:06.888+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "8d37b4456220ae034f81559f2dc199b31765493a39fecf50bb2dac8bd4b365bf.png"
+                },
+                {
+                  "screenshot": "00e3d4aa6e069e683f148d46453d2b10c3c2dded22ee1c763882e8e91dacdc0a.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 10,
+              "description": "Verify: 3.0",
+              "duration": 464,
+              "startTime": "2017-11-03T13:15:08.174+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "00e3d4aa6e069e683f148d46453d2b10c3c2dded22ee1c763882e8e91dacdc0a.png"
+                },
+                {
+                  "screenshot": "3131f48692ec953529c5f4b80a98aa7108dc465253e332284302673d6d7ff9fc.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "description": "Verify the calculator can do basic arithmetic #2: {Number1\u003d1, Operation\u003d+, Number2\u003d3, Equals\u003d\u003d, Result\u003d4}",
+      "duration": 7496,
+      "startTime": "2017-11-03T13:15:09.097+11:00[Australia/Sydney]",
+      "screenshots": [
+        {
+          "screenshot": "6448cfb629e1fb3de870f2c6602cf40c218e2af4bf38d55693b9415f38e7e5d1.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 12,
+          "description": "Given I load the calculator",
+          "duration": 3129,
+          "startTime": "2017-11-03T13:15:09.098+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 13,
+              "description": "Load",
+              "duration": 2950,
+              "startTime": "2017-11-03T13:15:09.113+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "description": "When I enter 1, +, 3",
+          "duration": 2065,
+          "startTime": "2017-11-03T13:15:12.228+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            },
+            {
+              "screenshot": "cf09a3cd7cfc1f66b0f939b405aa22540a7dd7aa02455c8998d56022a4509a55.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 15,
+              "description": "Select: 1",
+              "duration": 537,
+              "startTime": "2017-11-03T13:15:12.397+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "d48d41c43a6b8286abd7338b95ea5a62ef7abb8f2e95cb90a2716e5ebe1b0bc7.png"
+                },
+                {
+                  "screenshot": "214cfe4b51bfe4f7fd7341663b4adab2dbead1f76b201cfcbf6fd23d278c6eba.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 16,
+              "description": "Operation: +",
+              "duration": 574,
+              "startTime": "2017-11-03T13:15:12.936+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "214cfe4b51bfe4f7fd7341663b4adab2dbead1f76b201cfcbf6fd23d278c6eba.png"
+                },
+                {
+                  "screenshot": "e839f7add1c20d6e6226630bd9bdaeead0199c62cec2b31b9fee6c756e181f4f.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 17,
+              "description": "Select: 3",
+              "duration": 546,
+              "startTime": "2017-11-03T13:15:13.512+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "e839f7add1c20d6e6226630bd9bdaeead0199c62cec2b31b9fee6c756e181f4f.png"
+                },
+                {
+                  "screenshot": "cf09a3cd7cfc1f66b0f939b405aa22540a7dd7aa02455c8998d56022a4509a55.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "description": "Then the answer is 4",
+          "duration": 2082,
+          "startTime": "2017-11-03T13:15:14.293+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "cf09a3cd7cfc1f66b0f939b405aa22540a7dd7aa02455c8998d56022a4509a55.png"
+            },
+            {
+              "screenshot": "6448cfb629e1fb3de870f2c6602cf40c218e2af4bf38d55693b9415f38e7e5d1.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 19,
+              "description": "Calculate",
+              "duration": 1258,
+              "startTime": "2017-11-03T13:15:14.459+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4ad8f71b1077ae7deb59bacda94f93f1d4ee130c3b8f781ce6d62056e5d14f16.png"
+                },
+                {
+                  "screenshot": "66a43dcd7df0c185e93d852eb947974b4361041d49b66ac39a31e49f74c3c5e3.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 20,
+              "description": "Verify: 4.0",
+              "duration": 489,
+              "startTime": "2017-11-03T13:15:15.718+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "66a43dcd7df0c185e93d852eb947974b4361041d49b66ac39a31e49f74c3c5e3.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 21,
+      "description": "Verify the calculator can do basic arithmetic #3: {Number1\u003d5, Operation\u003d+, Number2\u003d2, Equals\u003d\u003d, Result\u003d7}",
+      "duration": 7780,
+      "startTime": "2017-11-03T13:15:16.659+11:00[Australia/Sydney]",
+      "screenshots": [
+        {
+          "screenshot": "36acb518043e4a1bb9d045dd46620d35a38b8c56b10051a5fd31e6f2569d63eb.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 22,
+          "description": "Given I load the calculator",
+          "duration": 3449,
+          "startTime": "2017-11-03T13:15:16.659+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 23,
+              "description": "Load",
+              "duration": 3279,
+              "startTime": "2017-11-03T13:15:16.669+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "description": "When I enter 5, +, 2",
+          "duration": 2024,
+          "startTime": "2017-11-03T13:15:20.109+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            },
+            {
+              "screenshot": "3d380029d2930f1c370959a3516723cb71bf03e50892fbd4290c47d937d8024c.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 25,
+              "description": "Select: 5",
+              "duration": 517,
+              "startTime": "2017-11-03T13:15:20.275+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "d48d41c43a6b8286abd7338b95ea5a62ef7abb8f2e95cb90a2716e5ebe1b0bc7.png"
+                },
+                {
+                  "screenshot": "765fe2bfb0f1d015731c8524ac96d9048d7462c9eab8d201ef7ddce6384b54dd.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 26,
+              "description": "Operation: +",
+              "duration": 560,
+              "startTime": "2017-11-03T13:15:20.793+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "765fe2bfb0f1d015731c8524ac96d9048d7462c9eab8d201ef7ddce6384b54dd.png"
+                },
+                {
+                  "screenshot": "c318c32ad8de6f34b666907531502d67923f3521c9ad76827024aa048a15e0e6.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 27,
+              "description": "Select: 2",
+              "duration": 573,
+              "startTime": "2017-11-03T13:15:21.353+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "c318c32ad8de6f34b666907531502d67923f3521c9ad76827024aa048a15e0e6.png"
+                },
+                {
+                  "screenshot": "3d380029d2930f1c370959a3516723cb71bf03e50892fbd4290c47d937d8024c.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 28,
+          "description": "Then the answer is 7",
+          "duration": 2065,
+          "startTime": "2017-11-03T13:15:22.133+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "3d380029d2930f1c370959a3516723cb71bf03e50892fbd4290c47d937d8024c.png"
+            },
+            {
+              "screenshot": "36acb518043e4a1bb9d045dd46620d35a38b8c56b10051a5fd31e6f2569d63eb.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 29,
+              "description": "Calculate",
+              "duration": 1250,
+              "startTime": "2017-11-03T13:15:22.298+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "23f994c34365fea18499b7f0a6e6a87f9ed3fc803d6e3667027c05280568e986.png"
+                },
+                {
+                  "screenshot": "950d51cbbf087023a624749bf8f8ea12193c0cfe3b5d799ae01ee897d98d4a5a.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 30,
+              "description": "Verify: 7.0",
+              "duration": 473,
+              "startTime": "2017-11-03T13:15:23.548+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "950d51cbbf087023a624749bf8f8ea12193c0cfe3b5d799ae01ee897d98d4a5a.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 31,
+      "description": "Verify the calculator can do basic arithmetic #4: {Number1\u003d0, Operation\u003d+, Number2\u003d3, Equals\u003d\u003d, Result\u003d3}",
+      "duration": 6951,
+      "startTime": "2017-11-03T13:15:24.510+11:00[Australia/Sydney]",
+      "screenshots": [
+        {
+          "screenshot": "0e0db5866591bf00d2d229cc1d50d7fc591b2c89b048f80f7d42a4776932a69a.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 32,
+          "description": "Given I load the calculator",
+          "duration": 2664,
+          "startTime": "2017-11-03T13:15:24.511+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 33,
+              "description": "Load",
+              "duration": 2484,
+              "startTime": "2017-11-03T13:15:24.526+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 34,
+          "description": "When I enter 0, +, 3",
+          "duration": 2070,
+          "startTime": "2017-11-03T13:15:27.175+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            },
+            {
+              "screenshot": "1a7f376aa14eee14110d4a4d74ffecd2fcd6196ee54b45c8a20d83c6888eb3d7.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 35,
+              "description": "Select: 0",
+              "duration": 532,
+              "startTime": "2017-11-03T13:15:27.345+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "d48d41c43a6b8286abd7338b95ea5a62ef7abb8f2e95cb90a2716e5ebe1b0bc7.png"
+                },
+                {
+                  "screenshot": "19f1bfb98bf3f8a75eb6f435876b39382097f77fdb6c11de85404f5ad6d4c73d.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 36,
+              "description": "Operation: +",
+              "duration": 577,
+              "startTime": "2017-11-03T13:15:27.878+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "19f1bfb98bf3f8a75eb6f435876b39382097f77fdb6c11de85404f5ad6d4c73d.png"
+                },
+                {
+                  "screenshot": "97c29728aea32c34a254610fb73e8f6e2caa1ce0e35ab44d25cced68da03e968.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 37,
+              "description": "Select: 3",
+              "duration": 575,
+              "startTime": "2017-11-03T13:15:28.456+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "97c29728aea32c34a254610fb73e8f6e2caa1ce0e35ab44d25cced68da03e968.png"
+                },
+                {
+                  "screenshot": "1a7f376aa14eee14110d4a4d74ffecd2fcd6196ee54b45c8a20d83c6888eb3d7.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 38,
+          "description": "Then the answer is 3",
+          "duration": 1997,
+          "startTime": "2017-11-03T13:15:29.246+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "1a7f376aa14eee14110d4a4d74ffecd2fcd6196ee54b45c8a20d83c6888eb3d7.png"
+            },
+            {
+              "screenshot": "0e0db5866591bf00d2d229cc1d50d7fc591b2c89b048f80f7d42a4776932a69a.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 39,
+              "description": "Calculate",
+              "duration": 1225,
+              "startTime": "2017-11-03T13:15:29.406+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "f62d43cfae7f2c833ee96645ab4b6174d792679a5a2ea295ee132e67fb30ffe4.png"
+                },
+                {
+                  "screenshot": "706f1183a5199ff93fc464dbdbb805f066677688fc923d503bf90f5bcff9c588.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 40,
+              "description": "Verify: 3.0",
+              "duration": 450,
+              "startTime": "2017-11-03T13:15:30.632+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "706f1183a5199ff93fc464dbdbb805f066677688fc923d503bf90f5bcff9c588.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "description": "Verify the calculator can do basic arithmetic #5: {Number1\u003d4, Operation\u003d+, Number2\u003d9, Equals\u003d\u003d, Result\u003d13}",
+      "duration": 6935,
+      "startTime": "2017-11-03T13:15:31.528+11:00[Australia/Sydney]",
+      "screenshots": [
+        {
+          "screenshot": "629ffc7b15da882b53c6779cb90d0479216decf9d1f4c76c5125c0944684e89a.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 42,
+          "description": "Given I load the calculator",
+          "duration": 2701,
+          "startTime": "2017-11-03T13:15:31.529+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 43,
+              "description": "Load",
+              "duration": 2524,
+              "startTime": "2017-11-03T13:15:31.541+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 44,
+          "description": "When I enter 4, +, 9",
+          "duration": 2044,
+          "startTime": "2017-11-03T13:15:34.230+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            },
+            {
+              "screenshot": "a105991311396b11b9e327fd0a692b0df09617f12035bb8a0c4765e17948e115.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 45,
+              "description": "Select: 4",
+              "duration": 539,
+              "startTime": "2017-11-03T13:15:34.405+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "d48d41c43a6b8286abd7338b95ea5a62ef7abb8f2e95cb90a2716e5ebe1b0bc7.png"
+                },
+                {
+                  "screenshot": "3f0c2483a942b763a70bad77b63c98bc5b90091a10356b5db9d1ba00bbace1b5.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 46,
+              "description": "Operation: +",
+              "duration": 541,
+              "startTime": "2017-11-03T13:15:34.944+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "3f0c2483a942b763a70bad77b63c98bc5b90091a10356b5db9d1ba00bbace1b5.png"
+                },
+                {
+                  "screenshot": "9d552fdd336a3c2d6dfa399cf7f64bcb8be8b46bd1b65ec1f8de84813519f1ea.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 47,
+              "description": "Select: 9",
+              "duration": 569,
+              "startTime": "2017-11-03T13:15:35.486+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "9d552fdd336a3c2d6dfa399cf7f64bcb8be8b46bd1b65ec1f8de84813519f1ea.png"
+                },
+                {
+                  "screenshot": "a105991311396b11b9e327fd0a692b0df09617f12035bb8a0c4765e17948e115.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 48,
+          "description": "Then the answer is 13",
+          "duration": 1980,
+          "startTime": "2017-11-03T13:15:36.275+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "a105991311396b11b9e327fd0a692b0df09617f12035bb8a0c4765e17948e115.png"
+            },
+            {
+              "screenshot": "629ffc7b15da882b53c6779cb90d0479216decf9d1f4c76c5125c0944684e89a.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 49,
+              "description": "Calculate",
+              "duration": 1209,
+              "startTime": "2017-11-03T13:15:36.437+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "ace1128e98a70c7669cad8a6b66b124b502f4dd51f87355cf9d0c0aede0b4f2a.png"
+                },
+                {
+                  "screenshot": "4a332298e8678adb196df6fe76504098e6a25266077ef711e43fdf34d35fad04.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 50,
+              "description": "Verify: 13.0",
+              "duration": 452,
+              "startTime": "2017-11-03T13:15:37.647+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4a332298e8678adb196df6fe76504098e6a25266077ef711e43fdf34d35fad04.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 51,
+      "description": "Verify the calculator can do basic arithmetic #6: {Number1\u003d5, Operation\u003d+, Number2\u003d5, Equals\u003d\u003d, Result\u003d10}",
+      "duration": 7017,
+      "startTime": "2017-11-03T13:15:38.529+11:00[Australia/Sydney]",
+      "screenshots": [
+        {
+          "screenshot": "86a067fac5f803a4fae86efe555ec5ce12f1c87003a73642a023951321bd5bc1.png"
+        }
+      ],
+      "result": "SUCCESS",
+      "precondition": false,
+      "children": [
+        {
+          "number": 52,
+          "description": "Given I load the calculator",
+          "duration": 2786,
+          "startTime": "2017-11-03T13:15:38.529+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 53,
+              "description": "Load",
+              "duration": 2597,
+              "startTime": "2017-11-03T13:15:38.541+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "4189f9f36d61f4d384ce2c9d46ffafea8e460b07162f04132ef5eedfd0bab371.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 54,
+          "description": "When I enter 5, +, 5",
+          "duration": 1954,
+          "startTime": "2017-11-03T13:15:41.316+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "d48d41c43a6b8286abd7338b95ea5a62ef7abb8f2e95cb90a2716e5ebe1b0bc7.png"
+            },
+            {
+              "screenshot": "368d532097186b8be7c54976a6c94c511d86b9cd08ec102437bb025f513b3b31.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 55,
+              "description": "Select: 5",
+              "duration": 521,
+              "startTime": "2017-11-03T13:15:41.476+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "d48d41c43a6b8286abd7338b95ea5a62ef7abb8f2e95cb90a2716e5ebe1b0bc7.png"
+                },
+                {
+                  "screenshot": "765fe2bfb0f1d015731c8524ac96d9048d7462c9eab8d201ef7ddce6384b54dd.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 56,
+              "description": "Operation: +",
+              "duration": 595,
+              "startTime": "2017-11-03T13:15:41.998+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "765fe2bfb0f1d015731c8524ac96d9048d7462c9eab8d201ef7ddce6384b54dd.png"
+                },
+                {
+                  "screenshot": "c318c32ad8de6f34b666907531502d67923f3521c9ad76827024aa048a15e0e6.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 57,
+              "description": "Select: 5",
+              "duration": 464,
+              "startTime": "2017-11-03T13:15:42.593+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "c318c32ad8de6f34b666907531502d67923f3521c9ad76827024aa048a15e0e6.png"
+                },
+                {
+                  "screenshot": "368d532097186b8be7c54976a6c94c511d86b9cd08ec102437bb025f513b3b31.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        },
+        {
+          "number": 58,
+          "description": "Then the answer is 10",
+          "duration": 2055,
+          "startTime": "2017-11-03T13:15:43.271+11:00[Australia/Sydney]",
+          "screenshots": [
+            {
+              "screenshot": "368d532097186b8be7c54976a6c94c511d86b9cd08ec102437bb025f513b3b31.png"
+            },
+            {
+              "screenshot": "86a067fac5f803a4fae86efe555ec5ce12f1c87003a73642a023951321bd5bc1.png"
+            }
+          ],
+          "result": "SUCCESS",
+          "precondition": false,
+          "children": [
+            {
+              "number": 59,
+              "description": "Calculate",
+              "duration": 1258,
+              "startTime": "2017-11-03T13:15:43.447+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "3fd9da90024c681b78b5942649818ba34c4e2cfaef3a7ee3526c7b14e9658894.png"
+                },
+                {
+                  "screenshot": "d348312164050565a52c743d8d211e1f170bf9f02286fab7be170925dd4f99d9.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            },
+            {
+              "number": 60,
+              "description": "Verify: 10.0",
+              "duration": 458,
+              "startTime": "2017-11-03T13:15:44.706+11:00[Australia/Sydney]",
+              "screenshots": [
+                {
+                  "screenshot": "d348312164050565a52c743d8d211e1f170bf9f02286fab7be170925dd4f99d9.png"
+                }
+              ],
+              "result": "SUCCESS",
+              "precondition": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "userStory": {
+    "id": "prove-the-calculator-can-add-and-subtract",
+    "storyName": "Prove the calculator can add and subtract",
+    "path": "src/test/resources/features/calculator/arithmetic/add_and_subtract.feature",
+    "type": "feature"
+  },
+  "featureTag": {
+    "name": "Arithmetic/Prove the calculator can add and subtract",
+    "type": "feature"
+  },
+  "title": "Verify the calculator can do basic arithmetic",
+  "additionalIssues": [
+    "TAD-5",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1"
+  ],
+  "tags": [
+    {
+      "name": "Arithmetic/Prove the calculator can add and subtract",
+      "type": "feature"
+    },
+    {
+      "name": "Calculator/Arithmetic",
+      "type": "story"
+    },
+    {
+      "name": "chrome",
+      "type": "browser"
+    },
+    {
+      "name": "Calculator",
+      "type": "epic"
+    },
+    {
+      "name": "TAD-1",
+      "type": "issue"
+    },
+    {
+      "name": "TAD-5",
+      "type": "issue"
+    }
+  ],
+  "startTime": "2017-11-03T13:14:58.048+11:00[Australia/Sydney]",
+  "duration": 53184,
+  "projectKey": "",
+  "sessionId": "c1398604929465ff4208bb295636b863",
+  "driver": "firefox",
+  "context": "chrome",
+  "dataTable": {
+    "headers": [
+      "Number1",
+      "Operation",
+      "Number2",
+      "Equals",
+      "Result"
+    ],
+    "rows": [
+      {
+        "values": [
+          "1",
+          "+",
+          "2",
+          "\u003d",
+          "3"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "1",
+          "+",
+          "3",
+          "\u003d",
+          "4"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "5",
+          "+",
+          "2",
+          "\u003d",
+          "7"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "0",
+          "+",
+          "3",
+          "\u003d",
+          "3"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "4",
+          "+",
+          "9",
+          "\u003d",
+          "13"
+        ],
+        "result": "SUCCESS"
+      },
+      {
+        "values": [
+          "5",
+          "+",
+          "5",
+          "\u003d",
+          "10"
+        ],
+        "result": "SUCCESS"
+      }
+    ],
+    "predefinedRows": true,
+    "scenarioOutline": "Given I load the calculator\n\rWhen I enter \u003cNumber1\u003e, \u003cOperation\u003e, \u003cNumber2\u003e\n\rThen the answer is \u003cResult\u003e\n\r",
+    "dataSetDescriptors": [
+      {
+        "startRow": 0,
+        "rowCount": 0,
+        "name": ""
+      }
+    ]
+  },
+  "manual": false,
+  "testSource": "Cucumber",
+  "result": "SUCCESS",
+  "issues": [
+    "TAD-5",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1",
+    "TAD-1"
+  ]
+}
