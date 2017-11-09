@@ -11,6 +11,8 @@ class SerenityJiraXrayGradlePlugin implements Plugin<Project> {
   void apply(Project project) {
     def extension = project.extensions.create('jira', SerenityJiraXrayGradlePluginExtension, project.objects)
     project.task('publishToJira') {
+      group = 'Publishing'
+      description = 'Publishes serenity test results to jira xray'
       doLast {
         TestRetriever testRetriever = new TestRetrieverImpl(username: extension.user,
                                                             password: extension.password,
