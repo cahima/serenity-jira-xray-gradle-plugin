@@ -2,23 +2,23 @@
 
 ## To use add the following to your gradle build script
 
-`buildscript {`  
-`  ...`  
-`  dependencies {`  
-`    ...`  
-`    classpath group: 'com.cahimar.jira', name: 'serenity-jira-xray-gradle-plugin', version: '1.0-SNAPSHOT'`  
-`  }`  
-`}`  
+`buildscript {`
+`  ...`
+`  dependencies {`
+`    ...`
+`    classpath group: 'com.cahimar.jira', name: 'serenity-jira-xray-gradle-plugin', version: '1.0-SNAPSHOT'`
+`  }`
+`}`
 
-`apply plugin: 'com.cahimar.jira'`  
+`apply plugin: 'com.cahimar.jira'`
 
-`jira {`  
-`  user System.getProperty('user')`  
-`  password System.getProperty('password')`  
-`  url "${jira.url}"`  
-`  folder "${serenity.outputDirectory}"`  
-`  project "${jira.project}"`  
-`  version "${version}"`  
+`jira {`
+`  user AUSERNAME`
+`  password APASSWORD`
+`  url YOURJIRAURL`
+`  folder THEFOLDERWHERESERENITYOUTPUTS`
+`  project YOURJIRAPROJECT`
+`  version THERELEASEVERSIONTESTED`
 `}`  
 
 ### NB You probably don't want to hardcode your password into the build script. This can be passed as an argument at run-time.
